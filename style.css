@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root {
+  --light-salmon: rgb(242, 169, 161);
+}
+
+body {
+  background-color: var(--light-salmon);
+  padding: 1.5rem;
+}
+
+.header__title,
+.page-section__heading {
+  font-family: 'Fjalla One', sans-serif;
+}
