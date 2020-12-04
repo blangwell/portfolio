@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
   --light-salmon: rgb(242, 169, 161);
@@ -7,6 +8,8 @@
 body {
   background-color: var(--light-salmon);
   padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .header__title,
