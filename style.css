@@ -16,11 +16,11 @@ main {
   text-justify: auto;
 }
 
-.section, .project {
+/* .section, .project {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .header__title,
 .section__heading {
@@ -34,4 +34,8 @@ main {
 
 .tech-list {
   list-style: none;
+}
+
+.closed-drawer {
+  display: none;
 }
