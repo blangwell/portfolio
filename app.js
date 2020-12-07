@@ -1,14 +1,20 @@
 const drawerTitle = document.querySelectorAll('.drawer__title');
-
-console.log(drawerTitle);
+const drawerControl = document.querySelectorAll('.drawer__control');
 
 drawerTitle.forEach(dt => {
   dt.addEventListener('click', (e) => {
-    const drawerClasses = dt.nextElementSibling.classList;
-    if (drawerClasses.contains('closed-drawer')) {
-      drawerClasses.remove('closed-drawer');
-    } else {
-      drawerClasses.add('closed-drawer');
-    };
+    const content = dt.nextElementSibling;
+    console.log(content)
+    if (content.style.maxHeight) content.style.maxHeight = null;
+    else content.style.maxHeight = content.scrollHeight + "px";
+  });
+});
+
+drawerControl.forEach(dt => {
+  dt.addEventListener('click', (e) => {
+    const content = dt.nextElementSibling;
+    console.log(content)
+    if (content.style.maxHeight) content.style.maxHeight = null;
+    else content.style.maxHeight = content.scrollHeight + "px";
   });
 });
