@@ -1,56 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap');
-
-
-:root {
-  --light-salmon: rgb(242, 169, 161);
-}
 
 body {
   background-color: #202229;
-  color: #EAEDE8
-  /* background: linear-gradient(to top right, #7bb6b2 27%, #93b1af 80%); */
+  color: #EAEDE8;
 }
-
-body a {
-  color: #958E93;
-}
-
-body p a {
-  text-align: justify;
-  text-justify: auto;
-}
-
 main {
   font-family: 'Roboto', sans-serif;
   margin: 1rem;
 }
 
-.header__title {
-  font-family: 'Zilla Slab Highlight', cursive;
-  font-size: 40px;
-  font-weight: 700;
-  color: #8BC4B5;
-}
-.section__title {
-}
-
-.project__image {
-  max-width: 80%;
-  padding: 0.5rem
-}
-
-.tech-list {
-  list-style: none;
-}
-
-.section {
+/* .section, .project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+} */
 
+.section__title {
+  font-family: 'Zilla Slab Highlight', sans-serif;
+  color: #8BC4B5;
+  font-weight: 800;
+
+}
+.section__content {
+  text-align: justify;
+  text-justify: auto;
 }
 
 .logo-list {
@@ -58,8 +34,39 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-gap: 1rem;
 }
-
 .logo-list__logo {
   height: 50px;
   width: auto;
+}
+
+.header__title {
+  font-family: 'Zilla Slab Highlight', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #8BC4B5;
+}
+.header__blurb {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+}
+.header__link-list {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+.header__link, 
+.project__link {
+  color: #8BC4B5;
+  font-size: 1.5rem;
+}
+
+.project__image {
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 10px;
+  /* filter: grayscale(50); */
+}
+.project__image:hover {
+  /* -webkit-filter: grayscale(100) !important;
+  filter: grayscale(100) !important; */
+  filter: grayscale(0);
 }
