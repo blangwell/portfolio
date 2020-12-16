@@ -82,7 +82,7 @@ main {
   main {
     text-align: center;
   }
-  .project, .header, .section__content {
+  .project, .header, .section__content, .project__body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,34 +97,89 @@ main {
   }
   .section__title {
     margin: 10px 0;
-    font-size: 2.5rem;
   }
   .section__content p {
     width: 80%;
     font-size: 1.1rem;
   }
   .project__image {
+    margin: 10px 0;
     width: 85%;
   }
+  .project__title {
+    font-size: 1.5rem;
+    margin: 10px 0  ;
+  }
+  .project__description {
+    margin: 0 0 20px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   body {
-    background-color: red;
+    background-color: purple;
   }
   .section__content p {
     width: 80%;
-    text-align: center;
-    font-size: 1.5rem;
+    /* text-align: center; */
+    font-size: 1.2em;
+  }
+  .section__title {
+    font-size: 2.8em;
+  }
+  .logo-list {
+    margin: 1rem;
+    
+  }
+  .project__title {
+    font-size: 1.8rem;
+  }
+  .project__description {
+    font-size: 5px;
   }
 }
+
+
 @media screen and (min-width: 992px) {
   body {
     background-color: green;
   }
+  .project__title {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  .project__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project__image {
+    width: 50%;
+  }
+  .section__content {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1200px) {
   body {
-    background-color: blue;
+    background-color: darkcyan;
+  }
+  .project__image {
+    width: 45%;
+  }
+  .project__title {
+    margin: 10px;
   }
 }
 
