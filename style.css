@@ -73,9 +73,9 @@ main {
 }
 
 @media screen and (min-width: 480px) {
-  body {
+  /* body {
     background-color: darkblue;
-  }
+  } */
   main {
     text-align: center;
   }
@@ -121,9 +121,9 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  /* body {
     background-color: purple;
-  }
+  } */
   .section__content p {
     width: 80%;
     /* text-align: center; */
@@ -147,9 +147,9 @@ main {
 
 
 @media screen and (min-width: 992px) {
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
   .project__title {
     font-size: 1.8rem;
     margin: 0;
@@ -178,14 +178,8 @@ main {
   }
 }
 @media screen and (min-width: 1200px) {
-  body {
+  /* body {
     background-color: darkcyan;
-  }
-  .project__image {
-    /* width: 45%; */
-  }
-  .project__title {
-    /* margin: 10px; */
-  }
+  } */
 }
 
