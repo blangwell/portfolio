@@ -58,7 +58,10 @@ main {
   font-weight: 500;
 
 }
+.project__link {
+  text-align: none;
 
+}
 
 .project__image {
   width: 100%;
