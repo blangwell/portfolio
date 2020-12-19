@@ -68,6 +68,8 @@ main {
   border-radius: 10px;  
 }
 
+
+
 @media screen and (min-width: 320px) {
 
 }
@@ -92,6 +94,10 @@ main {
   .header__link-list {
     margin: 0 0 20px 0;
   }
+  .about-blurb {
+  text-align: center;
+  }
+  
   .logo-list {
     max-width: 75%;
     display: flex;
