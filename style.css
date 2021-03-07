@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap');
 
@@ -168,4 +168,60 @@ main {
   }
 }
 
+ */
+header, .section, .project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Baskervville', serif;
+}
+.section__row {
+  margin: 15px;
+}
+.section__row p {
+  display: inline;
+  padding: 10px;
+}
 
+.header__title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.header__blurb {
+  font-size: 1.2rem;
+
+}
+.header__link-list {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px
+}
+.header__link {
+  font-family: 'Libre Baskerville', serif;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1em;
+  color: black;
+}
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.project__image {
+  width: 200px;
+}
+
+.italics {
+  font-style: italic;
+}
+.headshot {
+  border-radius: 50%;
+  height: 125px;
+  margin: 20px;
+}
+.about {
+  flex-direction: row;
+  margin: 20px;
+}
