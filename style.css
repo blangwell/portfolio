@@ -1,174 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap');
-
-body {
-  background-color: #202229;
-  color: #EAEDE8;
-}
-main {
-  font-family: 'Roboto', sans-serif;
-  margin: 1rem;
-}
-.section__title {
-  font-family: 'Zilla Slab Highlight', sans-serif;
-  color: #8BC4B5;
-  font-weight: 800;
-  font-size: 40px;
-}
-.section__content {
-  text-align: justify;
-  text-justify: auto;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.logo-list {
-  text-align: center;
-}
-
-.logo-list__logo {
-  height: 50px;
-  width: auto;
-  padding: 5px;
-}
-
-.header__title {
-  font-family: 'Zilla Slab Highlight', sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  color: #8BC4B5;
-}
-.header__blurb {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 200;
-}
-
-.header__link {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-.header__link, .project__title, .project__link {
-  color: #FFA17A;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.project__title, .project__link {
-  font-weight: 500;
-
-}
-.project__link {
-  text-align: none;
-
-}
-
-.project__image {
-  width: 100%;
-  border-radius: 10px;  
-}
-
-
-@media screen and (min-width: 480px) {
-  main {
-    text-align: center;
-  }
-  .project, .header, .section__content, .project__body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header__title {
-    margin: 50px 0 0 0;
-    font-size: 4em;
-  }
-  .header__link-list {
-    margin: 0 0 20px 0;
-  }
-  .about-blurb {
-  text-align: center;
-  }
-
-  .logo-list {
-    max-width: 75%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .section__title {
-    margin: 10px 0;
-  }
-  .section__content p {
-    width: 80%;
-    font-size: 1.1rem;
-  }
-  .project__image {
-    margin: 10px 0;
-    width: 85%;
-  }
-  .project__title {
-    font-size: 1.5rem;
-    margin: 10px 0  ;
-  }
-  .project__description {
-    margin: 0 0 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section__content p {
-    width: 80%;
-    font-size: 1.2em;
-  }
-  .section__title {
-    font-size: 2.8em;
-  }
-  .logo-list {
-    margin: 1rem;
-    max-width: 50%;
-    
-  }
-  .project__title {
-    font-size: 1.8rem;
-  }
-  .project__description {
-    font-size: 5px;
-  }
-}
-
-
-@media screen and (min-width: 992px) {
-  .project__title {
-    font-size: 1.8rem;
-    margin: 0;
-  }
-  .project{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .project__body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .project__image {
-    width: 50%;
-  }
-  .section__content {
-    flex: 0 0 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
- */
 header, .section, .project{
   display: flex;
   flex-direction: column;
@@ -182,6 +11,22 @@ header, .section, .project{
 .section__row p {
   display: inline;
   padding: 10px;
+  font-family: 'Libre Baskerville', serif;
+}
+.section__title {
+  font-size: 35px;
+}
+.section__link {
+  margin: 20px;
+  text-align: center;
+}
+
+.section__link, .header__link {
+  font-family: 'Libre Baskerville', serif;
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+  font-size: 1em;
 }
 
 .header__title {
@@ -198,19 +43,23 @@ header, .section, .project{
   justify-content: space-around;
   margin-top: 10px
 }
+
 .header__link {
-  font-family: 'Libre Baskerville', serif;
-  text-decoration: none;
-  font-style: italic;
   font-size: 1em;
-  color: black;
 }
 .header__link:hover {
   text-decoration: underline;
 }
 
 .project__image {
-  width: 200px;
+  width: 80%;
+}
+.project__title {
+  font-size: 25px;
+}
+.project__description {
+  width: 80%;
+  text-align: center;
 }
 
 .italics {
@@ -224,4 +73,19 @@ header, .section, .project{
 .about {
   flex-direction: row;
   margin: 20px;
+}
+hr {
+  margin-top: 40px;
+  max-width: 70%;
+}
+
+
+@media screen and (max-width: 350px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section__row p{
+    padding: 5px;
+  }
 }
