@@ -16,12 +16,11 @@ header, .section, .project{
 .section__title {
   font-size: 35px;
 }
-.section__link {
-  margin: 20px;
-  text-align: center;
+.section__content p {
+  line-height: 28px;
 }
 
-.section__link, .header__link {
+.section__link, .header__link, .project__link {
   font-family: 'Libre Baskerville', serif;
   text-decoration: none;
   font-style: italic;
@@ -47,7 +46,7 @@ header, .section, .project{
 .header__link {
   font-size: 1em;
 }
-.header__link:hover {
+.header__link:hover, .project__link:hover, .section__link:hover {
   text-decoration: underline;
 }
 
@@ -55,11 +54,12 @@ header, .section, .project{
   width: 80%;
 }
 .project__title {
-  font-size: 25px;
+  font-size: 28px;
 }
 .project__description {
   width: 80%;
   text-align: center;
+  
 }
 
 .italics {
@@ -79,7 +79,12 @@ hr {
   max-width: 70%;
 }
 
+.recent-update {
+  width: 80%;
+  text-align: center;
+}
 
+/* smallest screens */
 @media screen and (max-width: 350px) {
   .about {
     flex-direction: column;
@@ -87,5 +92,55 @@ hr {
   }
   .section__row p{
     padding: 5px;
+  }
+}
+
+/* ipads & tablets */
+@media screen and (min-width: 700px) {
+  /* TODO 
+  hrs DONE
+  header link spacing DONE
+  section margins
+  font sizes DONE
+  */
+  .header__title {
+    font-size: 50px;
+  }
+  .header__blurb {
+    font-size: 25px;
+  }
+  .header__link-list {
+    width: 55%;
+  }
+  .header__link {
+    font-size: 20px;
+  }
+  .section__title {
+    font-size: 40px;
+  }
+  .about {
+    margin: 1vh 5vw;
+  }
+  .about-blurb, .section__row p, .recent-update, .project__description {
+    font-size: 20px;
+  }
+  .project__title {
+    font-size: 30px;
+  }
+  .section__content p {
+    margin-bottom: 2vh;
+    line-height: 4vh;
+  }
+  hr {
+    max-width: 50%;
+  }
+  main {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 50%
   }
 }
